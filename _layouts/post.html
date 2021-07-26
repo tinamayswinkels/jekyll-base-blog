@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+
+<section class="grid">
+
+    <div class="padded-1 col-8_xs-12">
+
+        <div class="intro padded-1">
+            <h1> {{ page.title }} </h1>
+            <p> Written by {{ page.author }} </p>
+            <p> {{ page.date | date_to_long_string }}</p>
+
+            {% for item in page.categories %}
+                <span class="tag"> {{ item }}</span>
+            {% endfor %}
+
+        </div>
+
+        {{content}}
+
+    </div>
+
+    <div class="padded-1 col-4_xs-12">
+        <h2> Recent Posts </h2>
+
+        {% for post in site.posts %}
+    
+        <a href="{{post.url}}"> {{post.title}}</a>
+        
+        {% endfor %}
+
+    </div>
+
+</section>
