@@ -8,7 +8,7 @@ author: Tina May
 featured: true
 categories:
   - travel
-  - bali
+  - life
 featured_image: https://source.unsplash.com/random?sig=7
 seo:
   title:

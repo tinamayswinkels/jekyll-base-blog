@@ -25,13 +25,14 @@ title: Blog Page
 
 
 <!------------------------ CTA Banner  ------------------------>
-<section class="bg-dark text-light padded center"> 
-    <div class="capped-width-narrow">
+<section class="bg-featured text-light padded center capped-width"> 
 
+    <div class="capped-width-narrow">
         <h2> A catchy heading </h2>
         <p> This is a call-to-action to drive traffic somewhere important </p>
         <a href="#" class="button"> Let's do this </a>
     </div>
+
 </section> 
 
 
@@ -49,4 +50,17 @@ title: Blog Page
 
     </div>
 
+
+    <!-- This checks if there are more than 15 blog posts, and if there are shows a link to the full blog archive -->
+
+    {% assign post_count=site.posts | size %}
+    
+    {% if post_count > 15 %}
+        <div class="center padded">
+            <a class="button" href="/archive"> See More </a>
+        </div>
+       
+    {% endif %}
+
 </section>
+

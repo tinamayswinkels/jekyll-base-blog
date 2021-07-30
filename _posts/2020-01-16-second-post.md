@@ -4,7 +4,7 @@ title: My second post
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
 author: Daniel
 featured: true
-categories: [travel, australia]
+categories: [food]
 featured_image: https://source.unsplash.com/random?sig=6
 seo: 
     title: 

@@ -49,6 +49,17 @@ layout: default
 
         </div>
 
+        <div class="sidebar-item padded-1">
+            <h4> Explore Categories </h4>
+
+            <nav> 
+                {% for archive in site.archives limit:8 %}
+                     <a href="{{archive.url}}" class="tag"> {{archive.category}}</a>
+                {% endfor %}
+            </nav>
+
+        </div>
+
     </aside> <!-- end sidebar-->
 
 </section>

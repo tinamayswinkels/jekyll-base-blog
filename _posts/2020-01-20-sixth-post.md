@@ -4,7 +4,7 @@ title: My sixth post
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
 author: James
 featured: true
-categories: [self care, bali]
+categories: [self care]
 featured_image: https://source.unsplash.com/random?sig=2
 seo: 
     title: 

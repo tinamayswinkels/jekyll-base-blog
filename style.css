@@ -5,7 +5,7 @@
     --light-text: #f7f5f3;
     --featured-text: #6495ed;
     --dark: rgb(60,60,65);
-    --medium: rgb(100,100,105);
+    --medium: #ede8e4;
     --light: #f7f5f3;
     --v-light: #f9f9f9;
     --featured: #6495ed;
@@ -109,8 +109,9 @@ section { position: relative; }
 
 .bg-dark     { background-color: var(--dark);}
 .bg-featured { background-color: var(--featured);}
+.bg-medium   { background-color: var(--medium); }
 .bg-light    { background-color: var(--light); }
-.bg-v-light    { background-color: var(--v-light); }
+.bg-v-light  { background-color: var(--v-light); }
 
 .bg-image {
     background-color: var(--light); /* Set a fall-back color while images are loading */ 
@@ -143,7 +144,7 @@ section { position: relative; }
 
 /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
 
-.landscape     { padding-bottom: 66% ;  }
+.landscape     { padding-bottom: 66% ; }
 .portrait-tall { padding-bottom: 175%; }
 .portrait      { padding-bottom: 125%; }
 .square        { padding-bottom: 100%; }
@@ -201,7 +202,7 @@ p:last-child {
 .text-featured  { color: var(--featured-text);}
 .text-light     { color: var(--light-text);}
 .subtle         { opacity: 0.8;     }
-.subtitle       { opacity: 0.8;     }
+.subtitle       { font-size: 0.8rem; }
 
 
 /* ------------ Buttons & Links ------------ */
@@ -343,7 +344,7 @@ nav a:hover {
 
 /* Sidebar */
 .sidebar-item {
-  border: 1px solid rgb(230,230,230);
+  border: 2px solid var(--light);
   margin-bottom: 1rem;
   color: var(--medium-text);
 }
@@ -355,6 +356,24 @@ nav a:hover {
 .recent-posts-nav a{
   display: block;
   font-weight: 300;
+}
+
+/* Social Share Nav  */
+
+.social-share a {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Miscelaneous elements  */
+hr.short {
+  border: 1px solid var(--dark-text);
+  width: 2rem;
+  margin: 1rem 0;
+}
+
+hr.short.center {
+  margin:auto;
+  margin: 1rem auto;
 }
 
 
@@ -378,7 +397,10 @@ nav a:hover {
 	display: none; 
 }
 
-.inline { display: inline-block;}
+.inline { 
+  display: inline-block;
+  vertical-align: top;
+}
 
 /* ------- MD Media Query (64em / 1024px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
@@ -399,23 +421,23 @@ nav a:hover {
 	.show-sm { display: block; }
 	.hide-sm { display: none;  }
 
-    .sm-text-center { text-align: center; }
-    .sm-text-left   { text-align: left; }
-    .sm-text-right  { text-align: right; }
+  .sm-text-center { text-align: center; }
+  .sm-text-left   { text-align: left; }
+  .sm-text-right  { text-align: right; }
 
-    .sm-padded     { padding: 5%; }
-    .sm-padded-1   { padding: 1rem; }
-    .sm-padded-05  { padding: 0.5rem; }
+  .sm-padded     { padding: 5%; }
+  .sm-padded-1   { padding: 1rem; }
+  .sm-padded-05  { padding: 0.5rem; }
 
-    .sm-padded-t-0 { padding-top: 0; }
-    .sm-padded-b-0 { padding-bottom: 0; }
-    .sm-margin-t-0 { margin-top: 0; }
-    .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-margin-t-0 { margin-top: 0; }
+  .sm-margin-b-0 { margin-bottom: 0; }
 
-    .sm-landscape     { padding-bottom: 66% ; }
-    .sm-portrait-tall { padding-bottom: 175%; }
-    .sm-portrait      { padding-bottom: 125%; }
-    .sm-square        { padding-bottom: 100%; }
+  .sm-landscape     { padding-bottom: 66% ; }
+  .sm-portrait-tall { padding-bottom: 175%; }
+  .sm-portrait      { padding-bottom: 125%; }
+  .sm-square        { padding-bottom: 100%; }
 
 }
 
@@ -426,4 +448,9 @@ nav a:hover {
 
 		.show-xs { display: block; }
 		.hide-xs { display: none;  }
+
+    .subtle-heading-xs {
+      font-weight: 300;
+      font-family: 'Martel', serif; 
+    }
 }
