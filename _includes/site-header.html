@@ -3,10 +3,21 @@
       <a href="/" class="logo"> LOGO </a>
     </div> 
     <nav class="col-7 hide-sm right">
-       <a href="/blog"> Blog </a>
+
+      <a href="/blog"> Blog </a>
       <a href="/blog-archive"> Archive </a>
-      <a href="#"> Link  </a>
-      <a href="#"> Link  </a>
+
+      <div class="dropdown">
+        <span class="dropdown-title"> Catgeories </span>
+        <div class="dropdown-content">
+
+          {% for link in site.archives %}
+              <a href="{{link.url}}"> {{ link.category | capitalize }} </a>
+          {% endfor %}
+
+        </div> 
+      </div>
+
     </nav> 
     <div class="col-7 right show-sm">
       <a class="hamburger-button"> &#9776; </a>

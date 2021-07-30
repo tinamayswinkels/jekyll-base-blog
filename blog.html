@@ -1,6 +1,12 @@
 ---
 layout: default
 title: Blog Page 
+seo:
+  title:
+  description:
+  social_image:
+  keywords:
+  hide-from-google: false
 ---
 
 <!------------------------ Split blog loop (part 1) ------------------------>
@@ -9,7 +15,7 @@ title: Blog Page
     <div class="capped-width grid-center">
 
     <div class="col-9 padded-05 center margin-b-1">
-        <h2> Featured Posts </h2>
+        <h2> Latest Posts </h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p>
     </div>
 
@@ -41,7 +47,6 @@ title: Blog Page
 
     <div class="capped-width grid-center">
 
-
         {% for post in site.posts limit:12 offset:3 %}
 
                 {% include post-loop-item-square.html %}
@@ -53,11 +58,11 @@ title: Blog Page
 
     <!-- This checks if there are more than 15 blog posts, and if there are shows a link to the full blog archive -->
 
-    {% assign post_count=site.posts | size %}
+    {% assign post_count = site.posts | size %}
     
-    {% if post_count > 15 %}
+    {% if post_count > 5 %}
         <div class="center padded">
-            <a class="button" href="/archive"> See More </a>
+            <a class="button" href="/blog-archive"> See More </a>
         </div>
        
     {% endif %}

@@ -31,10 +31,11 @@ section { position: relative; }
 
 /* ---------- Negative Space Utility Classes  ------------------ */ 
 
+.capped-width-wide      { max-width: 1600px; margin: auto; }
 .capped-width           { max-width: 1200px; margin: auto; }
 .capped-width-narrow    { max-width: 1000px; margin: auto; }
 .capped-width-v-narrow  { max-width: 800px;  margin: auto; }
-.capped-width-wide      { max-width: 1600px; margin: auto; }
+
 
 .tall-100 { min-height: 100vh; }
 .tall-90  { min-height: 90vh; }
@@ -119,6 +120,7 @@ section { position: relative; }
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
+    display: block;
 }
 
 .bg-overlay::after,
@@ -210,6 +212,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+  color: var(--featured-text); 
+}
+
 p a {
     text-decoration: none;
     border-bottom: 1px solid;
@@ -231,6 +237,11 @@ p a:hover {
     color: var(--featured-text);
 }
 
+.subtle-button {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
 /* suggested additional styles 
 - .button-inverted, .button-subtle, .button-lg  */
 
@@ -241,7 +252,7 @@ header {
 }
 
 nav a {
-    padding: 0.25rem;
+    padding: 0.25rem 0.5rem;
     display: inline-block;
     text-decoration: none;
 }
@@ -253,6 +264,34 @@ nav a:hover {
   text-decoration: none;
   font-size: 2.5rem;
 } 
+
+
+/* Dropdown styles */
+
+.dropdown { 
+  position: relative; 
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  padding: 0.5rem;
+  display:none; 
+  background-color: white;
+  z-index: 2;
+  text-align: left;
+  min-width: 10rem;
+}
+
+.dropdown:hover .dropdown-content{ 
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+}
 
 .hamburger-button {
     cursor: pointer;
