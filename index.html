@@ -3,15 +3,49 @@ layout: default
 title: Homepage
 ---
 
+<!------------------------ Image Banner  ------------------------>
+<section class="bg-image padded grid bg-overlay tall-90">
 
-<section> 
-
-    <h1>Welcome to your homepage!</h1>
-
-    {% for post in site.posts %}
-    
-    <a href="{{post.url}}"> {{post.title}}</a>
-    
-    {% endfor %}
+    <div class="col-12-middle center text-light">
+        <h2> Welcome to your new favourite blog </h2>
+        <p class="emphasis"> Lorem, ipsum dolor sit amet consectetur. </p>
+    </div>
 
 </section>
+
+<!------------------------ Featured blog loop ------------------------>
+<section class="padded">
+
+    <div class="capped-width grid-center">
+
+    <div class="col-12 padded-05 center margin-b-1">
+        <h2> Featured Posts </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p>
+    </div>
+
+        {% assign featured_posts = site.posts | where: 'featured', true %}
+
+        {% for post in featured_posts limit:3 %}
+
+            <div class="col-4 post-item padded-05">
+                <div class="bg-image portrait" style="background-image:url( '{{ post.featured_image }}' );"></div>
+                <div class="padded-t-1">
+                    
+                    {% for item in post.categories %}
+                        <span class="tag"> {{item}} </span>
+                    {% endfor %}
+
+                    <h2 class="margin-t-1"> {{ post.title }} </h2>
+                    <p> {{ post.description }} </p>
+                    <a href="{{ post.url }}" class="subtle-button"> Read More </a>
+
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+

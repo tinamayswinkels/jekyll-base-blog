@@ -2,26 +2,40 @@
 <html lang="en">
 
 <head>
+    <!-- Metadata  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- External Stylesheets  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <!-- Font Awesome Version 5 for Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"/>   
+
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
+    <!-- Custom Stylesheet  -->
+    <link rel="stylesheet" type="text/css" href="/editor.css" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
     
     <title>{{page.title}}</title>
 </head>
 
 <body>
-    <header>
-        This is our header 
-    </header>
+    
+    {% include site-header.html %}
 
     {{content}}
 
-    <footer>
-        This is our footer
-    </footer>
+    {% include site-footer.html %}
+
+    <!-- Javascript  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/main.js"></script>
+
 </body>
 
 </html>

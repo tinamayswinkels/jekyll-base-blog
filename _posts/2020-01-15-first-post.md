@@ -3,8 +3,15 @@ layout: post
 title: My first post 
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
 author: Tina May
+featured: true
 categories: [travel, bali]
-featured_image: https://www.instituteofcode.com/houdini.jpg
+featured_image: https://source.unsplash.com/random?sig=7
+seo: 
+    title: 
+    description: 
+    social_image: 
+    keywords: 
+    hide-from-google: false
 ---
 
 ## Adventures in Bali 

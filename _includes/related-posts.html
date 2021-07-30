@@ -1,0 +1,27 @@
+<section class="bg-light padded related-posts">
+
+    <h4 class="center"> Related Posts </h4>
+    
+    <div class="grid-center">
+    
+    
+    {% capture pageCategory %}{{ page.categories[0] }}{% endcapture %}
+
+    {% assign relevant-posts = site.categories[pageCategory] | where_exp:"post","post.url != page.url and post.hidden != true" %}
+
+      {% for post in relevant-posts limit:3 %}
+
+    
+          <a href="{{post.url}}" class="col-4_xs-12 padded-2 centered post-item">
+            <div class="bg-image landscape margin-b-05" style="background-image:url({{post.featured_image}})"> </div>
+            
+                <span class="post-info">by {{post.author}} // </span> 
+                <span class="post-info"> {{post.date | date: "%m.%d.%Y" }} </span>
+            
+                <h3 class="margin-t-05"> {{post.title}} </h3>
+          </a>
+          
+      {% endfor %}
+    </div>
+    
+</section>

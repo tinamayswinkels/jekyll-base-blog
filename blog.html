@@ -3,18 +3,50 @@ layout: default
 title: Blog Page 
 ---
 
-<section class="grid">
+<!------------------------ Split blog loop (part 1) ------------------------>
+<section class="padded">
 
+    <div class="capped-width grid-center">
 
-    {% for post in site.posts %}
-
-    <div class="col-4_xs-12">
-        <div class="bg-image square" style="background-image:url('{{post.featured_image}}')"></div>
-        <h3> {{ post.title }} </h3> 
-        <p> {{ post.description }}</p>
-        <a href="{{post.url}}"> Read More </a>
+    <div class="col-9 padded-05 center margin-b-1">
+        <h2> Featured Posts </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p>
     </div>
-    
-    {% endfor %}
+
+        {% for post in site.posts limit:3 %}
+
+            {% include post-loop-item-square.html %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+
+<!------------------------ CTA Banner  ------------------------>
+<section class="bg-dark text-light padded center"> 
+    <div class="capped-width-narrow">
+
+        <h2> A catchy heading </h2>
+        <p> This is a call-to-action to drive traffic somewhere important </p>
+        <a href="#" class="button"> Let's do this </a>
+    </div>
+</section> 
+
+
+<!------------------------ Split blog loop (part 2) ------------------------>
+<section class="padded">
+
+    <div class="capped-width grid-center">
+
+
+        {% for post in site.posts limit:12 offset:3 %}
+
+                {% include post-loop-item-square.html %}
+
+        {% endfor %}
+
+    </div>
 
 </section>

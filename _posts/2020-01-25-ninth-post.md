@@ -1,11 +1,11 @@
 ---
-layout: post
-title: My second post 
+layout: post-with-sidebar
+title: My ninth post 
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
-author: Daniel
+author: Catherine
 featured: true
-categories: [travel, australia]
-featured_image: https://source.unsplash.com/random?sig=6
+categories: [self care, bali]
+featured_image: https://source.unsplash.com/random?sig=8
 seo: 
     title: 
     description: 
@@ -13,8 +13,6 @@ seo:
     keywords: 
     hide-from-google: false
 ---
-
-## Adventures in Australia
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
 
