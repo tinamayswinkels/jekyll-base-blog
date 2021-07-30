@@ -2,3 +2,8 @@ collections:
   posts:
     output: true
     permalink: /posts/:year/:slug
+    
+    
+_options:
+  content:
+    styles: /editor.css
