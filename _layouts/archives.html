@@ -4,23 +4,4 @@ layout: default
 
 
 <!------------------------ Archive Blog Loop ------------------------>
-<section class="padded">
-
-    <div class="capped-width grid-center">
-
-        <div class="col-9 padded-05 center margin-b-1">
-
-            <h2> {{ page.title }}</h2>
-            {{ page.description_html }}
-
-        </div>
-
-            {% for post in site.categories[page.category] limit:12 %}
-
-                {% include post-loop-item-square.html %}
-
-            {% endfor %}
-
-    </div>
-
-</section>
+{% include category-post-loop.html %}

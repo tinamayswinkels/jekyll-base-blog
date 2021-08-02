@@ -4,7 +4,7 @@ title: My ninth post
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
 author: Catherine
 featured: true
-categories: [self care]
+categories: [life, self care]
 featured_image: https://source.unsplash.com/random?sig=8
 seo: 
     title: 

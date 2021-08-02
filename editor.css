@@ -2,8 +2,8 @@
 /* These styles are available in the cloudcannon blog post editor as classes to apply */
 
 img.wide-image {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: -5%;
+    margin-right: -5%;
 }
 
 img.one-third-image {
