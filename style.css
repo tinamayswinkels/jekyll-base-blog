@@ -267,6 +267,12 @@ nav a:hover {
 .dropdown { 
   position: relative; 
   display: inline-block;
+  border: 1px solid orange;
+}
+
+.dropdown-title {
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
 }
 
 .dropdown-content {
@@ -279,6 +285,7 @@ nav a:hover {
   z-index: 2;
   text-align: left;
   min-width: 10rem;
+  border: 1px solid mediumvioletred;
 }
 
 .dropdown:hover .dropdown-content{ 
@@ -287,6 +294,7 @@ nav a:hover {
 
 .dropdown-content a {
   display: block;
+  padding: 0.2rem;
 }
 
 .hamburger-button {

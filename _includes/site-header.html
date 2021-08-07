@@ -1,3 +1,4 @@
+
 <header class="grid-middle">
     <div class="col-5">
       <a href="/" class="logo"> LOGO </a>
@@ -11,13 +12,16 @@
         <span class="dropdown-title"> Catgeories </span>
         <div class="dropdown-content">
 
-          {% for link in site.archives %}
-              <a href="{{link.url}}"> {{ link.category | capitalize }} </a>
-          {% endfor %}
+          <a href="/food"> Food </a>
+          <a href="/bali"> Bali </a>
+          <a href="/self-care"> Self Care </a>
+          <a href="/travel"> Travel </a>
 
         </div> 
       </div>
-
+        <a href="#"> Portfolio </a>
+        <a href="#"> Contact </a>
+      
     </nav> 
     <div class="col-7 right show-sm">
       <a class="hamburger-button"> &#9776; </a>
@@ -32,3 +36,12 @@
       <a href="#"> Link Four </a>
     </nav>
   </div> 
+
+
+
+<!-- 
+  {% for link in site.archives %}
+              <a href="{{link.url}}"> {{ link.category | capitalize }} </a>
+          {% endfor %}
+
+--> 
