@@ -16,8 +16,6 @@ seo:
   social_image:
   keywords:
   hide-from-google: false
-_comments:
-  title: Max 70 Characters
 ---
 ## Adventures in Bali
 
