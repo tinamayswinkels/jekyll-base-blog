@@ -251,6 +251,7 @@ nav a {
     padding: 0.25rem 0.5rem;
     display: inline-block;
     text-decoration: none;
+    text-transform: capitalize;
 }
 nav a:hover {
   color: var(--featured-text);

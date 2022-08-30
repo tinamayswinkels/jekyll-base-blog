@@ -4,6 +4,7 @@ collections:
     permalink: /posts/:year/:slug
   archives: 
     output: true
+    permalink: /:title
     
     
 _options:

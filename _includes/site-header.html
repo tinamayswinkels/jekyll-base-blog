@@ -11,11 +11,12 @@
       <div class="dropdown">
         <span class="dropdown-title"> Catgeories </span>
         <div class="dropdown-content">
-
-          <a href="/food"> Food </a>
-          <a href="/bali"> Bali </a>
+          {% for cat in site.archives %}
+          <a href="{{cat.url}}"> {{cat.category}} </a>
+          {% endfor %}
+          <!-- <a href="/bali"> Bali </a>
           <a href="/self-care"> Self Care </a>
-          <a href="/travel"> Travel </a>
+          <a href="/travel"> Travel </a> -->
 
         </div> 
       </div>
