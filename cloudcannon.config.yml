@@ -54,6 +54,20 @@ _inputs:
       allow_create: true
       empty_type: array
     cascade: true
+  images:
+    type: array
+  images[*]:
+    type: image
+  image_size_ratio:
+    type: select
+      options:
+        values:
+          portrait: Portrait
+          landscape: Landscape
+          square: Square
+          default: Default
+        allow_create: false
+        empty_type: array
   content:
     type: text
     options:
@@ -79,3 +93,80 @@ _inputs:
       image: true
     cascade: true
 timezone: Etc/UTC
+
+# Snippet definitions are generic variables that can be referenced in snippets
+# In this case, we're defining the common set of tokens that are relevant to
+# Jekyll/liquid tags. (This covers things like the `=` symbol between keys and values)
+# You shouldn't need to change these.
+_snippets_definitions:
+  jekyll_liquid_format:
+    root_value_delimiter: '='
+    root_pair_delimiter:
+      - ''
+    array_boundary:
+      start: '['
+      end: ']'
+    array_delimiter: ','
+    string_boundary:
+      - '"'
+      - ''''
+    forbidden_tokens:
+      - '%}'
+      - '-%}'
+      - '}}'
+      - ','
+
+# Snippet templates create a reusable structure to reduce repetition in snippets.
+# These are what you normally import in cloudcannon using _snippets_imports
+# As an example of creating one, here is a basic template for defining snippets that are liquid includes.
+
+_snippets_templates:
+  jekyll_liquid_include:
+    snippet: '{% include [[name]] [[args]] %}'
+    params:
+      name:
+        parser: literal
+        options:
+          literal:
+            # This ref needs to be supplied by the _snippet when used
+            ref: include_name
+      args:
+        parser: key_values
+        options:
+          models:
+            # This ref needs to be supplied by the _snippet when used
+            ref: named_args
+          format:
+             # This ref is pulled from the `_snippets_definitions` above
+            ref: jekyll_liquid_format
+
+# Snippets defines each editor-facing snippet.
+# Here we inherit the above snippet, and specify the remaining `ref` variables.
+_snippets:
+  figure:
+    template: jekyll_liquid_include
+    inline: false
+    preview:
+      text: Figure
+    definitions:
+      include_name: figure.html
+      named_args:
+        - editor_key: image
+          type: string
+        - editor_key: alt
+          type: string
+        - editor_key: caption_html
+          type: string
+  image_grid:
+    template: jekyll_liquid_include
+    inline: false
+    preview:
+      text: Figure
+    definitions:
+      include_name: snippets/img_gallery
+      named_args:
+        - editor_key: images
+          type: array
+        - editor_key: image_size_ratio
+          type: select
+  
