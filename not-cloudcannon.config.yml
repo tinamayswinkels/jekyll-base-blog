@@ -159,7 +159,7 @@ _snippets:
     template: jekyll_liquid_include
     inline: false
     preview:
-      text: Figure
+      text: image gallery
     definitions:
       include_name: snippets/img_gallery
       named_args:
