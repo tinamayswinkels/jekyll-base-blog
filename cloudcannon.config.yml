@@ -172,11 +172,11 @@ _snippets:
     definitions:
       include_name: img_gallery_3.html
       named_args:
-        - editor_key: image-1
+        - editor_key: first-image
           type: image
-        - editor_key: image-2
+        - editor_key: second-image
           type: image
-        - editor_key: image-3
+        - editor_key: third-image
           type: image
         - editor_key: image_size_ratio
           type: select
