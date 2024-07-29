@@ -75,7 +75,7 @@ _structures:
           img_position: 
 _editables:
   content:
-    type: html
+    type: markdown
     options:
       styles: /editor.css
       blockquote: true
