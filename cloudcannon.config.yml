@@ -60,12 +60,12 @@ _inputs:
     type: image
   image_size_ratio:
     type: select
-      options:
-        values:
-          portrait: Portrait
-          landscape: Landscape
-          square: Square
-          default: Default
+    options:
+      values:
+        portrait: Portrait
+        landscape: Landscape
+        square: Square
+        default: Default
   content:
     type: text
     options:
