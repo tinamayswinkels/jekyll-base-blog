@@ -92,7 +92,7 @@ _inputs:
       strike: true
       image: true
     cascade: true
-timezone: Etc/UTC
+
 
 # Snippet definitions are generic variables that can be referenced in snippets
 # In this case, we're defining the common set of tokens that are relevant to
@@ -169,4 +169,6 @@ _snippets:
           type: array
         - editor_key: image_size_ratio
           type: select
-  
+
+
+timezone: Etc/UTC
