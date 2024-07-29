@@ -168,12 +168,16 @@ _snippets:
     template: jekyll_liquid_include
     inline: false
     preview:
-      text: image gallery
+      text: 3 image gallery
     definitions:
-      include_name: img_gallery.html
+      include_name: img_gallery_3.html
       named_args:
-        - editor_key: images
-          type: array
+        - editor_key: image-1
+          type: image
+        - editor_key: image-2
+          type: image
+        - editor_key: image-3
+          type: image
         - editor_key: image_size_ratio
           type: select
 
