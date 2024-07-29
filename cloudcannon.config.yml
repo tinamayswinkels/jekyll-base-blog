@@ -56,8 +56,8 @@ _inputs:
     cascade: true
   images:
     type: array
-  images[*]:
-    type: image
+    options:
+      structures: _structures.images
   image_size_ratio:
     type: select
     options:
@@ -66,6 +66,13 @@ _inputs:
         landscape: Landscape
         square: Square
         default: Default
+_structures:
+  images:
+    values:
+      - value:
+          image: 
+          alt: 
+          img_position: 
 _editables:
   content:
     type: text
