@@ -143,20 +143,20 @@ _snippets_templates:
 # Snippets defines each editor-facing snippet.
 # Here we inherit the above snippet, and specify the remaining `ref` variables.
 _snippets:
-  figure:
-    template: jekyll_liquid_include
-    inline: false
-    preview:
-      text: Figure
-    definitions:
-      include_name: figure.html
-      named_args:
-        - editor_key: image
-          type: string
-        - editor_key: alt
-          type: string
-        - editor_key: caption_html
-          type: string
+  # figure:
+  #   template: jekyll_liquid_include
+  #   inline: false
+  #   preview:
+  #     text: Figure
+  #   definitions:
+  #     include_name: figure.html
+  #     named_args:
+  #       - editor_key: image
+  #         type: string
+  #       - editor_key: alt
+  #         type: string
+  #       - editor_key: caption_html
+  #         type: string
   image_grid:
     template: jekyll_liquid_include
     inline: false
