@@ -163,7 +163,7 @@ _snippets:
     preview:
       text: image gallery
     definitions:
-      include_name: snippets/img_gallery.html
+      include_name: img_gallery.html
       named_args:
         - editor_key: images
           type: array
