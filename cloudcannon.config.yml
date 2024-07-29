@@ -62,10 +62,10 @@ _inputs:
     type: select
     options:
       values:
-        portrait: Portrait
-        landscape: Landscape
-        square: Square
-        default: Default
+        - Portrait
+        - Landscape
+        - Square
+        - Default
 _structures:
   images:
     values:
