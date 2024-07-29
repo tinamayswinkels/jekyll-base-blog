@@ -1,0 +1,81 @@
+paths:
+  uploads: uploads
+  uploads_use_relative_path: false
+  static: ''
+  dam_uploads: ''
+  dam_static: ''
+  collections: ''
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  data:
+    path: _data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  posts:
+    path: _posts
+    output: true
+    icon: notes
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  pages:
+    path: ''
+    output: true
+    filter: strict
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  archives:
+    path: _archives
+    output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_inputs:
+  categories:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  tags:
+    type: multiselect
+    options:
+      allow_create: true
+      empty_type: array
+    cascade: true
+  content:
+    type: text
+    options:
+      styles: /editor.css
+      blockquote: true
+      horizontalrule: true
+      format: p h1 h2 h3 h4 h5 h6
+      bold: true
+      italic: true
+      numberedlist: true
+      bulletedlist: true
+      code: true
+      table: true
+      right: right
+      center: center
+      left: left
+      embed: true
+      link: true
+      undo: true
+      redo: true
+      underline: true
+      strike: true
+      image: true
+    cascade: true
+timezone: Etc/UTC
