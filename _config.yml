@@ -7,26 +7,5 @@ collections:
     permalink: /:title
     
     
-_options:
-  content:
-    styles: /editor.css
-    blockquote: true
-    horizontalrule: true
-    format: p h1 h2 h3 h4 h5 h6
-    bold: true
-    italic: true
-    numberedlist: true
-    bulletedlist: true
-    code: true
-    table: true
-    right: right
-    center: center
-    left: left
-    embed: true
-    link: true
-    undo: true
-    redo: true
-    underline: true
-    strike: true
-    image: true
+
   
