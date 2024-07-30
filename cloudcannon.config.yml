@@ -66,7 +66,12 @@ _inputs:
         - landscape
         - square
         - default
-
+  float-direction:
+    type: select
+    options:
+      values:
+        - left
+        - right
 _editables:
   content:
     type: markdown
@@ -164,15 +169,35 @@ _snippets:
     preview:
       text: 3 image gallery
     definitions:
-      include_name: imgGallery3.html
+      include_name: snippets/imgGallery3.html
       named_args:
         - editor_key: first-image
           type: string
+        - editor_key: first-alt
+          type: string
         - editor_key: second-image
+          type: string
+        - editor_key: second-alt
           type: string
         - editor_key: third-image
           type: string
+        - editor_key: third-alt
+          type: string
         - editor_key: image_size_ratio
+          type: string
+  floating_image:
+    template: jekyll_liquid_include
+    inline: false
+    preview:
+      text: floating image
+    definitions:
+      include_name: snippets/image-float.html
+      named_args:
+        - editor_key: image
+          type: string
+        - editor_key: alt
+          type: string
+        - editor_key: float-direction
           type: string
 
 

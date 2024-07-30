@@ -148,7 +148,7 @@ a.bg-image { display: block;}
 .square        { padding-bottom: 100%; }
 
 
-/* image-gallery code */
+/* post image code */
 
 .image-gallery {
   display: flex;
@@ -167,6 +167,19 @@ a.bg-image { display: block;}
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.max-w-50p{
+  max-width: 50p;
+}
+
+.float-left{
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+}
+.float-right{
+  margin: 1rem 0rem 1rem 1rem;
+  float: right;
 }
 
 /* Background Position */
