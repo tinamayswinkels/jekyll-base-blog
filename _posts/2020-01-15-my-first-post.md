@@ -43,7 +43,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, 
 
 &nbsp;
 
-{% include imgGallery3.html first-image="/uploads/dee-copper-and-wild-1lbmrktx8gq-unsplash.jpg" image_size_ratio="Portrait" %}
+{% include imgGallery3.html first-image="/uploads/dee-copper-and-wild-1lbmrktx8gq-unsplash.jpg" second-image="/uploads/dee-copper-and-wild-1lbmrktx8gq-unsplash.jpg" third-image="/uploads/dee-copper-and-wild-1lbmrktx8gq-unsplash.jpg" image_size_ratio="square" %}
+
+&nbsp;
 
 &nbsp;
 
