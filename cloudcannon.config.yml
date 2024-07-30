@@ -66,13 +66,7 @@ _inputs:
         - Landscape
         - Square
         - Default
-_structures:
-  images:
-    values:
-      - value:
-          image: 
-          alt: 
-          img_position: 
+
 _editables:
   content:
     type: markdown
@@ -98,7 +92,7 @@ _editables:
       strike: true
       image: true
       snippet: true
-    cascade: true
+  cascade: true
 
 
 # Snippet definitions are generic variables that can be referenced in snippets
@@ -116,7 +110,7 @@ _snippets_definitions:
     array_delimiter: ','
     string_boundary:
       - '"'
-      - ''''
+      - "'"
     forbidden_tokens:
       - '%}'
       - '-%}'
