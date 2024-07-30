@@ -148,6 +148,20 @@ a.bg-image { display: block;}
 .square        { padding-bottom: 100%; }
 
 
+/* image-gallery code */
+
+.image-gallery div{
+  position: relative;
+}
+
+.image-gallery :not(.default) img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /* Background Position */
 .bg-pos-t { background-position: top; }
 .bg-pos-b { background-position: bottom; }
