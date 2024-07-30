@@ -150,6 +150,11 @@ a.bg-image { display: block;}
 
 /* image-gallery code */
 
+.image-gallery {
+  display: flex;
+  gap: 1rem;
+}
+
 .image-gallery div{
   position: relative;
 }
