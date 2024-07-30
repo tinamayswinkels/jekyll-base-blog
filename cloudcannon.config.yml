@@ -168,6 +168,10 @@ _snippets:
       named_args:
         - editor_key: first-image
           type: string
+        - editor_key: second-image
+          type: string
+        - editor_key: third-image
+          type: string
         - editor_key: image_size_ratio
           type: string
 

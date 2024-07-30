@@ -2,5 +2,15 @@
     <div class="">
         <img src="{{ include.first-image }}" alt="">
     </div>
+    {% if include.second-image %}
+    <div class="">
+        <img src="{{ include.second-image }}" alt="">
+    </div>
+    {% endif %}
+    {% if include.third-image %}
+    <div class="">
+        <img src="{{ include.third-image }}" alt="">
+    </div>
+    {% endif %}
 {{include.image_size_ratio}}
 </div>
