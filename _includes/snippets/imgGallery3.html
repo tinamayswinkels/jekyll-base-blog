@@ -1,15 +1,22 @@
 <div class="flex image-gallery">
-    <div class="{{include.image_size_ratio}}">
-        <img src="{{ include.first-image }}" alt="{{ include.first-alt }}">
+    <div>
+        <div class="{{include.image_size_ratio}}">
+            <img src="{{ include.first-image }}" alt="{{ include.first-alt }}">
+        </div>
     </div>
+    
     {% if include.second-image %}
-    <div class="{{include.image_size_ratio}}">
-        <img src="{{ include.second-image }}" alt="{{ include.second-alt }}">
+    <div>
+        <div class="{{include.image_size_ratio}}">
+            <img src="{{ include.second-image }}" alt="{{ include.second-alt }}">
+        </div>
     </div>
     {% endif %}
     {% if include.third-image %}
-    <div class="{{include.image_size_ratio}}">
-        <img src="{{ include.third-image }}" alt="{{ include.second-alt }}">
+    <div>
+        <div class="{{include.image_size_ratio}}">
+            <img src="{{ include.third-image }}" alt="{{ include.second-alt }}">
+        </div>
     </div>
     {% endif %}
 </div>
