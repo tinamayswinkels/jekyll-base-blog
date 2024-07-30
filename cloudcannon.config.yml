@@ -167,9 +167,9 @@ _snippets:
       include_name: imgGallery3.html
       named_args:
         - editor_key: first-image
-          type: image
+          type: string
         - editor_key: image_size_ratio
-          type: select
+          type: string
 
 
 timezone: Etc/UTC
