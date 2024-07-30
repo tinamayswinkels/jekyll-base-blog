@@ -164,7 +164,7 @@ _snippets:
     preview:
       text: 3 image gallery
     definitions:
-      include_name: snippets/img_gallery_3.html
+      include_name: imgGallery3.html
       named_args:
         - editor_key: first-image
           type: image
