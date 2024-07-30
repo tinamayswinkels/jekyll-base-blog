@@ -62,10 +62,10 @@ _inputs:
     type: select
     options:
       values:
-        - Portrait
-        - Landscape
-        - Square
-        - Default
+        - portrait
+        - landscape
+        - square
+        - default
 
 _editables:
   content:
