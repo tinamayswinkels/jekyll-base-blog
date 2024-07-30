@@ -110,7 +110,7 @@ _snippets_definitions:
     array_delimiter: ','
     string_boundary:
       - '"'
-      - "'"
+      - ''''
     forbidden_tokens:
       - '%}'
       - '-%}'
@@ -167,10 +167,6 @@ _snippets:
       include_name: snippets/img_gallery_3.html
       named_args:
         - editor_key: first-image
-          type: image
-        - editor_key: second-image
-          type: image
-        - editor_key: third-image
           type: image
         - editor_key: image_size_ratio
           type: select
