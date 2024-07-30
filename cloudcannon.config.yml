@@ -187,7 +187,7 @@ _snippets:
           type: string
   floating_image:
     template: jekyll_liquid_include
-    inline: false
+    inline: true
     preview:
       text: floating image
     definitions:
